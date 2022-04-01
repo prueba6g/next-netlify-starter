@@ -1,3 +1,20 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+export default function Car() {
+  return <h2>I am a Car!</h2>;
+}
+
+export default function Garage() {
+  return (
+    <>
+	    <h1>Who lives in my Garage?</h1>
+	    <Car />
+    </>
+  );
+}
+
+ReactDOM.render(<Garage />, document.getElementById('root'));
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
